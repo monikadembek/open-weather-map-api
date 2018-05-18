@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:600|Raleway:400,600');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(to bottom right, #dbf3ff, rgba(132, 193, 224, 0.5)), url('../img/appBg.jpg'), no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	text-align: center;
+}
+
+.header {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: #116d9b;
+}
+
+.searchBox {
+	margin: 2rem 0;
+}
+
+.searchBox * {
+	margin-top: .5rem;
+}
+
+.searchBox__label,
+span {
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #116d9b;
+}
+
+.searchBox__input {
+	margin: 0 0.5rem;
+	padding: 0.5rem 0.8rem;
+	border-radius: 0.8rem;
+	outline: none;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: #666;
+	min-width: 12rem;
+}
+
+.searchBox__input:focus {
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+
+.searchBox__btn {
+	padding: 0.5rem 1rem;
+	background: #116d9b;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	color: #ffffff;
+	outline: none;
+	border: 1px solid #fff;
+	transition: all 0.4s;
+}
+
+.searchBox__btn:hover {
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+
+.content {
+	margin-top: 1rem;
+	border: solid 2px #116d9b;
+	border-radius: 10px;
+	padding: 1rem 2rem;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.content li:not(:last-child) {
+	margin-bottom: .5rem;
+}
+
+.content span {
+	font-size: 0.875rem;
+}
+
+.content img {
+	width: 80px;
+	height: 80px;
+}
+
+.error {
+	color: red;
+}
+
